@@ -159,7 +159,7 @@ LRESULT CALLBACK Win32Window::WndProc(HWND const window,
                                       WPARAM const wparam,
                                       LPARAM const lparam) noexcept {
   if (message == WM_NCCREATE) {
-    auto window_struct = reinterpret_cast<CREATESTRUCT*>(lparam);
+    auto window_struct = reinterpret_cast<CREAtestRUCT*>(lparam);
     SetWindowLongPtr(window, GWLP_USERDATA,
                      reinterpret_cast<LONG_PTR>(window_struct->lpCreateParams));
 

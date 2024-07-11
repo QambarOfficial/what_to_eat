@@ -1,2 +1,2 @@
-# what_to_eat
+# test
 An app for deciding menu for lunch and dinner on Flutter SDK.

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:test/chat_screen.dart';
-import 'package:test/profile_screen.dart';
-import 'package:test/search_screen.dart';
+import 'package:what_to_eat/chat_screen.dart';
+import 'package:what_to_eat/profile_screen.dart';
+import 'package:what_to_eat/search_screen.dart';
 
 void main() {
   runApp(const MyApp());

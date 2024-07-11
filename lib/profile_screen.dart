@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/admin_dialog.dart';
+import 'package:what_to_eat/admin_dialog.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
