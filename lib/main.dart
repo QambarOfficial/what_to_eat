@@ -3,6 +3,8 @@ import 'package:what_to_eat/chat_screen.dart';
 import 'package:what_to_eat/profile_screen.dart';
 import 'package:what_to_eat/search_screen.dart';
 
+import 'loginPage.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Khane me kya hai',
       theme: ThemeData(primarySwatch: Colors.orange),
-      home: const MyHomePage(),
+      home: const LoginPage(),
     );
   }
 }
