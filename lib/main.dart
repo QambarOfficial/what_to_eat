@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:what_to_eat/chat_screen.dart';
-import 'package:what_to_eat/profile_screen.dart';
+// ignore: unused_import
+import 'profilePage.dart';
 import 'package:what_to_eat/search_screen.dart';
 
 import 'loginPage.dart';
@@ -121,9 +122,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     ChatScreen(),
     SearchScreen(),
-    ProfileScreen(),
+    ProfilePage(),
   ];
 }
+
