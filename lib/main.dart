@@ -17,7 +17,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Khane me kya hai',
-      theme: ThemeData(primarySwatch: Colors.orange),
+      // theme: ThemeData(primarySwatch: Colors.orange),
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+        primaryColor: Colors.black,
+        buttonTheme: const ButtonThemeData(
+          buttonColor: Colors.black, // Optional: Change button color
+        ),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
+            .copyWith(secondary: Colors.black),
+      ),
       home: const LoginPage(),
     );
   }
@@ -115,17 +124,16 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        unselectedItemColor: Colors.blueGrey,
-        selectedItemColor: const Color(0xFFFF8F00),
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
         onTap: _onItemTapped,
       ),
     );
   }
 
   static List<Widget> _widgetOptions = <Widget>[
-    ChatScreen(),
-    SearchScreen(),
+    const ChatScreen(),
+    const SearchScreen(),
     ProfilePage(),
   ];
 }
-

@@ -1,22 +1,9 @@
 import 'package:flutter/material.dart';
 
-
-
 class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Family Profile'),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {
-              // Handle menu action
-            },
-          ),
-        ],
-      ),
       body: Column(
         children: <Widget>[
           _buildHeader(),
@@ -41,7 +28,8 @@ class ProfilePage extends StatelessWidget {
         children: <Widget>[
           const CircleAvatar(
             radius: 40,
-            backgroundImage: AssetImage('assets/javier.jpg'), // Replace with your image asset
+            backgroundImage: AssetImage(
+                'assets/javier.jpg'), // Replace with your image asset
           ),
           const SizedBox(height: 8.0),
           const Text(
@@ -49,7 +37,6 @@ class ProfilePage extends StatelessWidget {
             style: TextStyle(
               fontSize: 24,
               color: Color.fromARGB(255, 237, 235, 235),
-
               fontWeight: FontWeight.bold,
             ),
           ),
