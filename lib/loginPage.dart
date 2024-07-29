@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
     print('Email: $email');
     print('Password: $password');
     if (email == "email" && password == "pass") {
-      Navigator.push(
+      Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => MyHomePage()),
       );
